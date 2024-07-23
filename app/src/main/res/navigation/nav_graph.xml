@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.lockscreen.FirstFragment"
+        android:name="com.example.lockscreen.LockScreenFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/frag_lockscreen">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
@@ -17,9 +17,9 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.lockscreen.SecondFragment"
+        android:name="com.example.lockscreen.SettingFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/frag_setting">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
