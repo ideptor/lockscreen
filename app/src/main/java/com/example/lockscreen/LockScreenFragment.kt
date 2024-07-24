@@ -38,12 +38,18 @@ class LockScreenFragment : Fragment() {
 //        }
         binding.btnCheck.setOnClickListener{
             val userInput = binding.etAnswer.text.toString()
-            if(userInput == Answer.getInstance().answer) {
+            if(userInput.length < 1) {
+                Toast.makeText(context, "정답을 입력하세요.", Toast.LENGTH_SHORT).show()
+                binding.etAnswer.text.clear()
+                binding.tvItem.text = ""
+            }
+            else if(userInput == Answer.getInstance().answer) {
                 Toast.makeText(context, "축하합니다.\n정답입니다.", Toast.LENGTH_SHORT).show()
                 binding.tvItem.text = "획득한 아이템: 8"
             } else {
                 Toast.makeText(context, "$userInput 은(는) 정답이 아닙니다.", Toast.LENGTH_SHORT).show()
                 binding.etAnswer.text.clear()
+                binding.tvItem.text = ""
             }
         }
     }

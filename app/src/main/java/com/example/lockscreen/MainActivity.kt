@@ -1,5 +1,6 @@
 package com.example.lockscreen
 
+import android.content.SharedPreferences
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -35,6 +36,12 @@ class MainActivity : AppCompatActivity() {
 //                .setAction("Action", null)
 //                .setAnchorView(R.id.fab).show()
 //        }
+
+
+        val sharedPreference = getSharedPreferences("sp1", MODE_PRIVATE)
+//        val editor  : SharedPreferences.Editor = sharedPreference.edit()
+        Answer.getInstance().answer = sharedPreference.getString("answer", "").toString()
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

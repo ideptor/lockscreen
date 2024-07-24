@@ -2,8 +2,8 @@
     <string name="app_name">lockscreen</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="first_fragment_label">정답을 맞춰보세요</string>
+    <string name="second_fragment_label">정답 변경</string>
     <string name="settings">Setting</string>
     <string name="previous">Previous</string>
 
